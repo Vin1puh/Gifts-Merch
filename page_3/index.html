@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="img/logo.svg" alt="logo">
+            <div class="header_input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+            <button>+380 630 130 103</button>
+            <div class="ico">
+                <i class="fa-regular fa-user"></i> <p>RU <span>/ENG</span></p>
+            </div>
+            <i id="burger" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header_bot">
+            <nav>
+                <ul>
+                    <li><a href='../page_4/index.html'>Наборы</a></li>
+                    <li onclick="open_menu()"><a href='../page_3/index.html'>Все товары</a></li>
+                    <li><a href='../page_5/index.html'>Пошив</a></li>
+                    <li><a href='../page_5/index.html'>Производство</a></li>
+                    <li><a href='../AboutUs/index.html'>Информация</a></li>
+                </ul>
+                <span>Шопперы со скидкой - 25%</span>
+            </nav>
+            <div id="button_menu">
+                <ul>
+                    <li><button>Одежда</button></li>
+                    <li><button onclick="open_menu2()">Сумки и аксессуары</button></li>
+                    <li><button>Для офиса</button></li>
+                    <li><button>Посуда</button></li>
+                    <li><button>Отдых</button></li>
+                    <li><button>Вкусности</button></li>
+                    <li><button>Электроника</button></li>
+                </ul>
+            </div>
+            <div id="button_menu2">
+                <ul>
+                    <li><button>-Рюкзак</button></li>
+                    <li><button>-Сумка/Экосумка</button></li>
+                    <li><button>-Бананка</button></li>
+                    <li><button>-Шапка</button></li>
+                    <li><button>-Кепка</button></li>
+                    <li><button>-Маска для сна</button></li>
+                    <li><button>-Защитная маска</button></li>
+                    <li><button>-Значки/Пины</button></li>
+                    <li><button>-Брелки</button></li>
+                    <li><button>-Обложка на паспорт/тревелкейс/кардхолдер</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <section id='sec-1'>
+        <div class="sec-1">
+            <div class="left-block">
+                <div class="text-block">
+                    <h1>Современный мерч создает современные бренды</h1>
+                    <p>Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.
+                        Наша команда всегда погружается в концепт заказа для того, чтобы предложить вам лучшее решение, при этом оптимизировать затраты. 
+                         У нас широкий ассортимент  готовых моделей, так же изготовим любую продукцию по Вашему дизайну. 
+                        </p>
+                </div> 
+                <div class="left-buttons">
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-1-1">
+        <div class="top-line" id="topLine"></div>
+        <ul class="menu" id="menu">
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Все товары
+                <ul class="submenu">
+                    <li>Худи на заказ</li>
+                    <li>Худи класс.</li>
+                    <li>Худи оверсайз</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Толстовки
+                <ul class="submenu">
+                    <li>Футболки обычные</li>
+                    <li>Футболки с принтом</li>
+                    <li>Футболки оверсайз</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Свитшоты
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Футболки
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Поло
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Жилетки
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Рюкзаки
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Бананки
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Эко-сумки/Шопперы 
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Пледы 
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Носки 
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+            <li class="item" onclick="setActive(this); event.stopPropagation();">Маски
+                <ul class="submenu">
+                    <li>Поло</li>
+                    <li>Поло</li>
+                    <li>Поло</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section class="tovarsAll">
+        <div class="tovars">
+            <div class="cardsContainer">
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="img/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="img/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                
+            </div>
+            <div class="cardsContainer">
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 10.png"alt="Product Image" class="product-image active">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button  class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="img/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                <div class="product-card">
+                    <div class="image-slider">
+                        <img src="img/Group 9.png" alt="Product Image" class="product-image active">
+                        <img src="img/Group 10.png" alt="Product Image" class="product-image">
+                        <img src="img/Group 10 (2).png" alt="Product Image" class="product-image">
+                        <button class="arrow left" onclick="changeImage(event, this, -1)">&#10094;</button>
+                        <button class="arrow right" onclick="changeImage(event, this, 1)">&#10095;</button>
+                    </div>
+                    <h2>EL003 Elleven Checkpoint-Friendly Compu-Backpack</h2>
+                    <p>EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                    <div class="color-buttons">
+                        <div class="color-button" style="background-color: #524983;"></div>
+                        <div class="color-button" style="background-color: #309F85;"></div>
+                        <div class="color-button" style="background-color: #F1F1F1;"></div>
+                    </div>
+                    <div class="price">From Price <br> $76.43 <button class="basketButton"><img src="img/shopping-basket.png" alt=""></button></div>
+                </div>
+                
+            </div>
+            <div class="pokazat">
+                <ul>
+                    <li><p>Показать еще</p><a href=""><img src="" alt=""></a></li>
+                </ul>
+                <ul>
+                    <li><button><</button></li>
+                    <li><button>1</button><button>2</button><button>3</button><button>4</button><button>5</button></li>
+                    <li><button>></button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="pop-up-card-All">
+        <div class="pop-up-card">
+            <div class="withImg">
+                <img id="photomain" src="img/Mask Group.png" alt="">
+                <ul>
+                    <li><img src="img/Screenshot_295 1.png" alt=""></li>
+                    <li><img src="img/Screenshot_296.png" alt=""></li>
+                    <li><img src="img/Screenshot_297.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="opisanie">
+                <p>Главная / Все товары / Сумки и аксессуары / Рюкзаки / EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                <p id="nazv">EL003 Elleven Checkpoint-Friendly Compu-Backpack</p>
+                <div class="color-buttons">
+                    <div class="color-button" style="background-color: #524983;"></div>
+                    <div class="color-button" style="background-color: #309F85;"></div>
+                    <div class="color-button" style="background-color: #F1F1F1;"></div>
+                </div>
+                <p id="price">From Price $76.43</p>
+                <p id="opistovar">This exclusive design has a designated laptop-only section that unfolds to lay flat on the X-ray belt to increase your speed, convenience and security. (Pens, Laptop and other devices shown are not included)</p>
+                <div class="razmer">
+                    <ul>
+                        <li>Размер</li>
+                        <li><a href="XS"></a><a href="">S</a><a href="">M</a><a href="">L</a><a href="">XXL</a></li>
+                        <li><img src="img/🌈 COLOR.png" alt=""><a href="">Подобрать размер</a></li>
+                        <li><button class="zakazbutton">Заказать</button></li>
+                    </ul>
+                    <ul>
+                        <li><p>Характеристики</p><img src="img/arrow(1).png" alt=""></li>
+                        <li><p>Материал</p><p>100% хлопок</p></li>
+                        <li><p>Нанесение</p><p>вышивка, термопечать</p></li>
+                        <li><p>Торговая марка</p><p>100% хлопок</p></li>
+                        <li><p>Плотность, г/м</p><p>150</p></li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <img src="img/photo_2022-01-19_17-14-00 1.png" alt="">
+                </div>
+            </div>
+            <div class="withButtonInfo"><button class="closeInfoButton">X</button></div>
+        </div>
+    </section>
+    <section class="oformlenieAll">
+        <div class="oformlenie">
+            <div class="slevaOform">
+                <ul>
+                    <li>Оформить заказ</li>
+                    <li>Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</li>
+                    <li><form action=""><input type="text" placeholder="Login"></form></li>
+                    <li><form action=""><input type="text" placeholder="email"></form></li>
+                    <li><form action=""><input type="text" placeholder="Phone number"></form></li>
+                    <li><button>Заказать</button></li>
+                    <li>Натискаючи "Підтвердити замовлення", Ви даєте згоду на обробку Ваших персональних даних</li>
+                </ul>
+            </div>
+            <div class="spravaOform">
+                <div class="sprava">
+                    <div class="korz"><p>Корзина</p> <button class="closeZakazButton">X</button></div>
+                    <div class="spravaInfo">
+                        <img class="tovarImg" src="img/Group 1654.png" alt="">
+                        <ul>
+                            <li>EL003 Elleven Checkpoint-Friendly Compu-Backpack</li>
+                            <li><p>Цвет</p><div class="color-button" style="background-color: #524983;"></li>
+                        </ul>
+                        <ul>
+                            <li><p>Размер</p></li>
+                            <li><p>XS</p></li>
+                        </ul>
+                        <ul>
+                            <li>Кол-во</li>
+                            <li><button>-</button><p>5</p><button>+</button></li>
+                            <li>min.</li>
+                        </ul>
+                        <ul>
+                            <li>$76.43</li>
+                        </ul>
+                    </div>
+                    <div class="spravaInfo">
+                        <img class="tovarImg" src="img/Group 1654.png" alt="">
+                        <ul>
+                            <li>EL003 Elleven Checkpoint-Friendly Compu-Backpack</li>
+                            <li><p>Цвет</p><div class="color-button" style="background-color: #524983;"></li>
+                        </ul>
+                        <ul>
+                            <li><p>Размер</p></li>
+                            <li><p>XS</p></li>
+                        </ul>
+                        <ul>
+                            <li>Кол-во</li>
+                            <li><button>-</button><p>5</p><button>+</button></li>
+                            <li>min.</li>
+                        </ul>
+                        <ul>
+                            <li>$76.43</li>
+                        </ul>
+                    </div>
+                    <div class="spravaInfo">
+                        <img class="tovarImg" src="img/Group 1654.png" alt="">
+                        <ul>
+                            <li>EL003 Elleven Checkpoint-Friendly Compu-Backpack</li>
+                            <li><p>Цвет</p><div class="color-button" style="background-color: #524983;"></li>
+                        </ul>
+                        <ul>
+                            <li><p>Размер</p></li>
+                            <li><p>XS</p></li>
+                        </ul>
+                        <ul>
+                            <li>Кол-во</li>
+                            <li><button>-</button><p>5</p><button>+</button></li>
+                            <li>min.</li>
+                        </ul>
+                        <ul>
+                            <li>$76.43</li>
+                        </ul>
+                    </div>
+                    <p class="zakaznumber">Заказ № 110293</p>
+                    <p class="vsego">Всего: $ 235.80</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='sec-5'>
+        <div class="sec-5">
+            <div class="sec-5-text">
+                <h5>У вас своя уникальная идея по разработке мерча?</h5>
+                <p>Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с  технологией производства, предоставим образцы матералов. </p>
+            </div>    
+            <form>
+                <span>Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</span>
+                <div class="form-cont">
+                    <input type="text" placeholder="Ваше Имя">
+                    <input type="text" placeholder="Ваша почта">
+                    <input type="text" placeholder="Ваш номер телефона">
+                    <button>Заказать</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/app.js"></script>
+    
+    <script>
+        function open_menu() {
+            const button_menu = document.getElementById('button_menu');
+            if (button_menu.style.display === 'none' || button_menu.style.display === '') {
+                button_menu.style.display = 'flex'; 
+            } else {
+                button_menu.style.display = 'none'; 
+            }
+        }
+        function open_menu2() {
+            const button_menu2 = document.getElementById('button_menu2');
+            if (button_menu2.style.display === 'none' || button_menu2.style.display === '') {
+                button_menu2.style.display = 'flex'; 
+            } else {
+                button_menu2.style.display = 'none'; 
+            }
+        }
+    </script>
+</body>
+</html>

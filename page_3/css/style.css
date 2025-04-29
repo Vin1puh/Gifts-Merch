@@ -1,0 +1,2020 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  max-width: 100%;
+  width: 100vw;
+  height: 50vh;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/Footer.png");
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  max-width: 100%;
+  background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+header .header {
+  width: 80vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header img {
+  width: 20vw;
+  height: 11vw;
+}
+header .header button {
+  background-color: #1FAB8A;
+  padding: 15px 45px 15px 45px;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+header .header .header_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .header_input input {
+  width: 20vw;
+  padding: 14px 45px 14px;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: initial;
+  font-weight: 1.3rem;
+}
+header .header .header_input i {
+  position: relative;
+  left: 35px;
+  color: gray;
+}
+header .header .ico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header .ico i {
+  width: 50px;
+  text-align: left;
+  font-size: 2rem;
+}
+header .header .ico p {
+  padding-top: 8px;
+  font-weight: 1.5rem;
+  font-weight: bold;
+}
+header .header .ico p span {
+  color: gray;
+  font-weight: lighter;
+}
+header .header #burger {
+  display: none;
+}
+header .header_bot {
+  max-width: 100%;
+  width: 100vw;
+  height: 10.01vh;
+  max-width: 100%;
+  width: 100vw;
+  height: 10.01vh;
+  background: #fff;
+  background-image: url("../img/Sale.png");
+  background-repeat: no-repeat;
+  background-position: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_bot #button_menu {
+  display: none;
+  position: absolute;
+  top: 25vh;
+  background-color: #222227;
+  width: 10vw;
+  left: 17.5vw;
+  height: 55vh;
+}
+header .header_bot #button_menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 50vh;
+  padding: 5px 5px 40px 5px;
+}
+header .header_bot #button_menu ul li {
+  height: 8vh;
+  width: 100%;
+  list-style-type: none;
+}
+header .header_bot #button_menu ul li button {
+  max-width: 10vw;
+  font-size: 0.9rem;
+  background-color: #222227;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  border-radius: 0;
+}
+header .header_bot #button_menu ul li button:hover {
+  background-color: #fff;
+  color: #524983;
+}
+header .header_bot #button_menu2 {
+  display: none;
+  position: absolute;
+  top: 32.5vh;
+  background-color: #222227;
+  width: 10vw;
+  left: 29vw;
+  height: 60vh;
+}
+header .header_bot #button_menu2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 50vh;
+  padding: 15px 5px 40px 5px;
+}
+header .header_bot #button_menu2 ul li {
+  list-style-type: none;
+  height: 8vh;
+  width: 100%;
+}
+header .header_bot #button_menu2 ul li:nth-child(10) {
+  height: 15vh;
+}
+header .header_bot #button_menu2 ul li button {
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #222227;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  border-radius: 0;
+}
+header .header_bot #button_menu2 ul li button:hover {
+  background-color: #fff;
+  color: #524983;
+}
+header .header_bot nav {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+header .header_bot nav ul {
+  width: 40vw;
+  gap: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_bot nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 10vh;
+  width: 20%;
+}
+header .header_bot nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .header_bot nav ul li:hover {
+  background-color: black;
+  color: #fff;
+}
+header .header_bot nav ul li:hover a {
+  color: #fff;
+}
+header .header_bot nav ul li:hover::after {
+  content: "";
+  position: relative;
+  bottom: -45px;
+  width: 100%;
+  left: 0;
+  height: 5px;
+  border-radius: 6px;
+  background-color: black;
+}
+header .header_bot nav span {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-right: 9vw;
+  color: rgb(60, 51, 108);
+}
+
+@media (max-width: 1600px) {
+  footer {
+    max-width: 100%;
+    width: 100vw;
+    height: 45vh;
+    background-image: url("../img/Footer.png");
+    background-size: cover;
+  }
+  header .header_bot {
+    max-width: 100%;
+    width: 100vw;
+    height: 10.01vh;
+    background: #fff;
+    background-image: url("../img/Sale.png");
+    background-repeat: no-repeat;
+    background-position: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header_bot nav {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+  header .header_bot nav ul {
+    width: 40vw;
+    gap: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header_bot nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1rem;
+    height: 10vh;
+    width: 20%;
+  }
+  header .header_bot nav ul li:hover {
+    background-color: black;
+    color: #fff;
+  }
+  header .header_bot nav ul li:hover::after {
+    content: "";
+    position: relative;
+    bottom: -45px;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 6px;
+    background-color: black;
+  }
+  header .header_bot nav span {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-right: 9vw;
+    color: rgb(60, 51, 108);
+  }
+}
+@media (max-width: 1100px) {
+  footer {
+    max-width: 100%;
+    width: 100vw;
+    height: 60vh;
+    background-image: url("../img/Footer (1).png");
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header {
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
+    background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  header .header {
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header img {
+    width: 20vw;
+    height: 11vw;
+  }
+  header .header button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+  }
+  header .header .header_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .header_input input {
+    width: 15vw;
+    padding: 14px 45px 14px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: initial;
+    font-weight: 1rem;
+  }
+  header .header .header_input i {
+    position: relative;
+    left: 35px;
+    color: gray;
+  }
+  header .header .ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .ico i {
+    width: 50px;
+    text-align: left;
+    font-size: 2rem;
+  }
+  header .header .ico p {
+    padding-top: 8px;
+    font-weight: 1rem;
+    font-weight: bold;
+  }
+  header .header .ico p span {
+    color: gray;
+    font-weight: lighter;
+  }
+  header .header_bot {
+    max-width: 100%;
+    width: 100vw;
+    height: 10.01vh;
+    background-image: url("../img/Sale.png");
+    background-repeat: no-repeat;
+    background-position: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header_bot nav {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+  header .header_bot nav ul {
+    width: 60vw;
+    gap: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header_bot nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    height: 10vh;
+    width: 20%;
+  }
+  header .header_bot nav ul li:hover {
+    background-color: black;
+    color: #fff;
+  }
+  header .header_bot nav ul li:hover::after {
+    content: "";
+    position: relative;
+    bottom: -45px;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 6px;
+    background-color: black;
+  }
+  header .header_bot nav span {
+    width: 15vw;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(60, 51, 108);
+  }
+}
+@media (max-width: 770px) {
+  footer {
+    max-width: 100%;
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../img/Footer 768.png");
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header {
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
+    background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  header .header {
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header #burger {
+    display: flex;
+    font-size: 2rem;
+  }
+  header .header img {
+    width: 40vw;
+    height: 11vw;
+  }
+  header .header button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 12px 25px 12px 25px;
+    font-size: 0.8rem;
+  }
+  header .header .header_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .header_input input {
+    display: none;
+  }
+  header .header .header_input i {
+    position: relative;
+    left: 35px;
+    font-size: 1.4rem;
+    width: 8vw;
+    color: gray;
+  }
+  header .header .ico {
+    display: none;
+  }
+  header .header_bot {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    max-width: 100%;
+    width: 100vw;
+    height: 130vh;
+    background-image: url("../img/Footer.svg");
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header {
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
+    background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  header .header {
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header #burger {
+    display: flex;
+    font-size: 1.7rem;
+  }
+  header .header img {
+    width: 50vw;
+    height: 11vw;
+  }
+  header .header button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 6px 12px 6px 12px;
+    display: none;
+  }
+  header .header .header_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .header_input input {
+    display: none;
+  }
+  header .header .header_input i {
+    position: relative;
+    left: 0px;
+    font-size: 1.4rem;
+    width: 8vw;
+    color: gray;
+  }
+  header .header .ico {
+    display: none;
+  }
+  header .header_bot {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  footer {
+    max-width: 90%;
+    width: 90vw;
+    height: 130vh;
+    background-image: url("../img/Footer.svg");
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header {
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
+    background: linear-gradient(to right, rgb(151, 150, 240), rgb(251, 199, 212));
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  header .header {
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header #burger {
+    display: flex;
+    font-size: 1.7rem;
+  }
+  header .header img {
+    width: 60vw;
+    height: 11vw;
+  }
+  header .header button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 6px 12px 6px 12px;
+    display: none;
+  }
+  header .header .header_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header .header_input input {
+    display: none;
+  }
+  header .header .header_input i {
+    position: relative;
+    left: 0px;
+    font-size: 1.4rem;
+    width: 8vw;
+    color: gray;
+  }
+  header .header .ico {
+    display: none;
+  }
+  header .header_bot {
+    display: none;
+  }
+}
+main {
+  display: block;
+  height: auto;
+}
+main #sec-1 {
+  max-width: 100%;
+  height: 90vh;
+  padding-top: 20vh;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/big_hoodi.svg");
+  background-size: cover;
+  overflow: hidden;
+}
+main #sec-1 .sec-1 {
+  width: 80vw;
+  height: 70vh;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+  gap: 10vh;
+}
+main #sec-1 .sec-1 .left-block {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+main #sec-1 .sec-1 .left-block .left-buttons {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3C336C;
+}
+main #sec-1 .sec-1 .left-block .left-buttons button {
+  padding: 12px 45px 12px 45px;
+  color: black;
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 30px;
+}
+main #sec-1 .sec-1 .left-block .left-buttons button:nth-child(1) {
+  background-color: #3C336C;
+  color: #fff;
+}
+main #sec-1 .sec-1 .left-block img {
+  width: 35vw;
+  z-index: 0;
+}
+main #sec-1 .sec-1 .left-block .text-block {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+  height: 20vh;
+}
+main #sec-1 .sec-1 .left-block .text-block h1 {
+  font-size: 4rem;
+}
+main #sec-1 .sec-1 .left-block .text-block p {
+  font-size: 1.2rem;
+}
+main #sec-1-1 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #sec-1-1 .menu {
+  width: 100vw;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  position: relative;
+  justify-content: space-between;
+}
+main #sec-1-1 .menu li {
+  cursor: pointer;
+  color: #8E8E8E;
+  position: relative;
+  font-size: 0.8rem;
+  padding: 10px 20px; /* Увеличение паддинга для соединения */
+}
+main #sec-1-1 .submenu {
+  display: none;
+  position: absolute;
+  background-color: #272525;
+  list-style-type: none;
+  padding: 10px 0; /* Убираем паддинг сверху и снизу */
+  margin-top: 5px;
+  margin-left: -20px;
+  z-index: 1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main #sec-1-1 .submenu li {
+  padding: 10px 10px; /* Паддинг в подменю для согласования */
+  color: white;
+  cursor: pointer;
+}
+main #sec-1-1 .submenu li:hover {
+  background-color: white;
+  color: #272525;
+}
+main #sec-1-1 .menu li.active {
+  background-color: #272525;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+}
+main .tovarsAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 100%;
+}
+main .tovarsAll .tovars {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 5vh;
+}
+main .tovarsAll .tovars .cardsContainer {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  height: auto;
+}
+main .tovarsAll .tovars .cardsContainer .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 1vh;
+}
+main .tovarsAll .tovars .cardsContainer .card ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 2vh;
+}
+main .tovarsAll .tovars .cardsContainer .card ul li:nth-child(2) {
+  align-self: flex-end;
+  position: absolute;
+  top: -80px;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  -moz-column-gap: 0.5vw;
+       column-gap: 0.5vw;
+}
+main .tovarsAll .tovars .cardsContainer .card ul li:nth-child(2) button {
+  background: transparent;
+  font-size: 1vw;
+  border: none;
+}
+main .tovarsAll .tovars .kats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  font-size: 0.9vw;
+}
+main .tovarsAll .tovars .kats a {
+  text-decoration: none;
+  color: #8E8E8E;
+}
+main .product-card {
+  background: white;
+  padding: 19px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 16vw;
+}
+main .image-slider {
+  position: relative;
+  width: 110%;
+  right: 15px;
+  top: -15px;
+}
+main .product-image {
+  width: 100%;
+  display: none;
+}
+main .product-image.active {
+  display: block;
+}
+main .arrow {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+main .arrow.left {
+  right: 50px;
+}
+main .arrow.right {
+  right: 10px;
+}
+main .color-buttons {
+  margin-top: 10px;
+}
+main .color-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+main .price {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+main .pokazat {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  align-items: center;
+}
+main .pokazat ul {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  align-items: center;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+main .pokazat ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  -moz-column-gap: 0.5vw;
+       column-gap: 0.5vw;
+}
+main .pokazat ul li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+main .pop-up-card-All {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 0 auto;
+  z-index: 20;
+  position: fixed;
+  left: 5vw;
+  display: none;
+  top: 25vh;
+  background-color: #FAFAFA;
+  border-radius: 16px;
+}
+main .pop-up-card-All .withButtonInfo {
+  align-self: flex-start;
+  padding: 0.5vw;
+}
+main .pop-up-card-All .closeInfoButton {
+  background-color: white;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+main .pop-up-card-All #photomain {
+  width: 30vw;
+}
+main .pop-up-card-All .opisanie {
+  display: flex;
+  padding: 2vw;
+  flex-direction: column;
+  height: auto;
+  row-gap: 2vh;
+  justify-content: space-around;
+  align-self: flex-start;
+}
+main .pop-up-card-All .opisanie #opistovar {
+  width: 80%;
+  color: #454747;
+}
+main .pop-up-card-All .opisanie #price {
+  color: #272525;
+  font-size: 1.2vw;
+  font-weight: 700;
+}
+main .pop-up-card-All .opisanie #nazv {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #272525;
+}
+main .pop-up-card-All .withImg {
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  row-gap: 2vh;
+}
+main .pop-up-card-All .withImg ul {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+main .pop-up-card-All .withImg ul li {
+  list-style: none;
+}
+main .pop-up-card-All .pop-up-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+main .razmer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+main .razmer ul:nth-child(2) li {
+  -moz-column-gap: 7vw;
+       column-gap: 7vw;
+}
+main .razmer ul:nth-child(1) li:nth-child(2) {
+  flex-direction: row-reverse;
+}
+main .razmer ul:nth-child(1) li:nth-child(2) a {
+  text-decoration: none;
+  color: #524983;
+}
+main .razmer ul:nth-child(1) li:nth-child(3) {
+  align-self: center;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+main .razmer ul:nth-child(1) li:nth-child(4) {
+  align-self: center;
+}
+main .razmer ul:nth-child(1) li:nth-child(4) button {
+  background-color: #524983;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: none;
+  width: auto;
+  padding: 5vw;
+  padding-top: 1.2vw;
+  font-size: 1vw;
+  cursor: pointer;
+  padding-bottom: 1.2vw;
+}
+main .razmer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  row-gap: 2vh;
+}
+main .razmer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+main .basketButton {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+main .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Затенение с прозрачностью */
+  z-index: 10; /* Убедитесь, что это выше, чем остальные элементы */
+}
+main .oformlenieAll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 1vw;
+  border-radius: 16px;
+  background-color: #FAFAFA;
+  margin: 0 auto;
+  z-index: 20;
+  display: none;
+  position: fixed;
+  left: 5vw;
+  top: 25vh;
+}
+main .oformlenieAll .tovarImg {
+  width: 5vw;
+}
+main .oformlenieAll .zakaznumber {
+  color: #8E8E8E;
+}
+main .oformlenieAll .vsego {
+  align-self: flex-end;
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+main .oformlenieAll .spravaOform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 2px solid black;
+  padding-left: 2vw;
+}
+main .oformlenieAll .spravaOform .sprava {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: auto;
+  row-gap: 2vh;
+  padding-bottom: 1vh;
+}
+main .oformlenieAll .spravaOform .sprava .korz {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  justify-self: flex-start;
+}
+main .oformlenieAll .spravaOform .sprava .korz button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px black solid;
+  font-size: 1.2vw;
+  font-weight: 700;
+  background-color: white;
+}
+main .oformlenieAll .spravaOform .sprava .korz p {
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+main .oformlenieAll .spravaOform .sprava .spravaInfo {
+  display: flex;
+  width: auto;
+  padding-bottom: 1vh;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+  border-bottom: 2px solid black;
+}
+main .oformlenieAll .spravaOform .sprava .spravaInfo ul {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  row-gap: 1vh;
+}
+main .oformlenieAll .spravaOform .sprava .spravaInfo ul li {
+  display: flex;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+main .oformlenieAll .spravaOform .sprava .spravaInfo ul li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+}
+main .oformlenieAll .oformlenie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  -moz-column-gap: 2vh;
+       column-gap: 2vh;
+}
+main .oformlenieAll .oformlenie .slevaOform {
+  width: 45%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  align-self: flex-start;
+  height: auto;
+  row-gap: 2vh;
+  justify-content: space-between;
+}
+main .oformlenieAll .oformlenie .slevaOform button {
+  background-color: #309F85;
+  border-radius: 30px;
+  color: #FFFFFF;
+  border: none;
+  width: auto;
+  padding: 5vw;
+  padding-top: 1vw;
+  font-size: 1vw;
+  cursor: pointer;
+  padding-bottom: 1vw;
+}
+main .oformlenieAll .oformlenie .slevaOform form {
+  width: 20vw;
+  border: none;
+  border-bottom: 1px solid black;
+}
+main .oformlenieAll .oformlenie .slevaOform form input {
+  border: none;
+  background: transparent;
+  font-size: 1vw;
+}
+main .oformlenieAll .oformlenie .slevaOform ul {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: auto;
+  row-gap: 3vh;
+  justify-content: space-around;
+}
+main .oformlenieAll .oformlenie .slevaOform ul li:nth-child(1) {
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+main .oformlenieAll .oformlenie .slevaOform ul li:nth-child(2) {
+  font-size: 0.9vw;
+  width: 70%;
+  color: #454747;
+}
+main .oformlenieAll .oformlenie .slevaOform ul li:nth-child(7) {
+  width: 70%;
+}
+main .oformlenieAll .oformlenie .slevaOform ul li:nth-child(6) {
+  align-self: center;
+}
+main .oformlenieAll .oformlenie li {
+  list-style: none;
+}
+
+@media (max-width: 1600px) {
+  main #sec-1 {
+    max-width: 100%;
+    height: 90vh;
+    padding-top: 20vh;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/big_hoodi.svg");
+    background-size: 110%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position-x: 0vw;
+    background-position-y: center;
+  }
+  main #sec-1 .sec-1 {
+    width: 80vw;
+    height: 110vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  main #sec-1 .sec-1 #womens {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    width: 30vw;
+    height: 60vh;
+    z-index: 1;
+  }
+  main #sec-1 .sec-1 .left-block {
+    margin-top: 15vh;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block img {
+    width: 35vw;
+    z-index: 0;
+  }
+  main #sec-1 .sec-1 .left-block .text-block {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    height: 70vh;
+  }
+  main #sec-1 .sec-1 .left-block .text-block h1 {
+    font-size: 3.5rem;
+  }
+  main #sec-1 .sec-1 .left-block .text-block p {
+    font-size: 1.3rem;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons {
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C336C;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button {
+    padding: 12px 45px 12px 45px;
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 30px;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button:nth-child(1) {
+    background-color: #3C336C;
+    color: #fff;
+  }
+  main #sec-5 {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Group 1683.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100vw;
+  }
+  main #sec-5 .sec-5 {
+    width: 80vw;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  main #sec-5 .sec-5 .sec-5-text {
+    width: 34vw;
+    height: 22vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text h5 {
+    font-size: 2.2rem;
+  }
+  main #sec-5 .sec-5 .sec-5-text p {
+    font-size: 1.1rem;
+  }
+  main #sec-5 .sec-5 form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    width: 80vw;
+    height: 8vh;
+  }
+  main #sec-5 .sec-5 form span {
+    width: 30vw;
+    font-size: 1.2rem;
+    color: #222227;
+  }
+  main #sec-5 .sec-5 form .form-cont {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #sec-5 .sec-5 form .form-cont input {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  main #sec-5 .sec-5 form .form-cont button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1100px) {
+  main {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100vw;
+  }
+  main #sec-1 {
+    max-width: 100%;
+    height: 90vh;
+    padding-top: 20vh;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/hoodi.svg");
+    background-size: 110%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position-x: 0vw;
+    background-position-y: center;
+  }
+  main #sec-1 .sec-1 {
+    width: 80vw;
+    height: 110vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  main #sec-1 .sec-1 #womens {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    width: 30vw;
+    height: 60vh;
+    z-index: 1;
+  }
+  main #sec-1 .sec-1 .left-block {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block img {
+    width: 35vw;
+    z-index: 0;
+  }
+  main #sec-1 .sec-1 .left-block .text-block {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    height: 70vh;
+  }
+  main #sec-1 .sec-1 .left-block .text-block h1 {
+    font-size: 3rem;
+  }
+  main #sec-1 .sec-1 .left-block .text-block p {
+    font-size: 0.8rem;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons {
+    margin-top: 7vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C336C;
+    font-size: 0.6rem;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button {
+    padding: 12px 45px 12px 45px;
+    color: black;
+    border: none;
+    font-size: 0.6rem;
+    border-radius: 30px;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button:nth-child(1) {
+    background-color: #3C336C;
+    color: #fff;
+  }
+  main #sec-5 {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Group 1683.png");
+    background-repeat: no-repeat;
+    background-position-x: -20vw;
+    background-size: 150vw;
+  }
+  main #sec-5 .sec-5 {
+    width: 90vw;
+    height: 50vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  main #sec-5 .sec-5 .sec-5-text {
+    width: 45vw;
+    height: 22vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text h5 {
+    font-size: 1.8rem;
+  }
+  main #sec-5 .sec-5 .sec-5-text p {
+    font-size: 1.2rem;
+  }
+  main #sec-5 .sec-5 form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-items: start;
+    width: 90vw;
+    height: 20vh;
+  }
+  main #sec-5 .sec-5 form span {
+    width: 34vw;
+    font-size: 1.4rem;
+    color: #222227;
+    font-weight: bold;
+  }
+  main #sec-5 .sec-5 form .form-cont {
+    width: 45vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vh;
+  }
+  main #sec-5 .sec-5 form .form-cont input {
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  main #sec-5 .sec-5 form .form-cont button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+  main #sec-1-1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #sec-1-1 .menu {
+    width: 100vw;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    position: relative;
+    justify-content: space-between;
+  }
+  main #sec-1-1 .menu li {
+    cursor: pointer;
+    color: #8E8E8E;
+    position: relative;
+    font-size: 0.4rem;
+    padding: 10px 20px; /* Увеличение паддинга для соединения */
+  }
+  main #sec-1-1 .submenu {
+    display: none;
+    position: absolute;
+    background-color: #272525;
+    list-style-type: none;
+    padding: 10px 0; /* Убираем паддинг сверху и снизу */
+    margin-top: 5px;
+    margin-left: -20px;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  main #sec-1-1 .submenu li {
+    padding: 10px 10px; /* Паддинг в подменю для согласования */
+    color: white;
+    cursor: pointer;
+  }
+  main #sec-1-1 .submenu li:hover {
+    background-color: white;
+    color: #272525;
+  }
+  main #sec-1-1 .menu li.active {
+    background-color: #272525;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+  }
+  main .product-card {
+    width: calc(40% - 2vw); /* 2 карточки в ряд */
+    height: auto; /* автоматически регулируем высоту */
+    margin: 1vw;
+    padding: 2vw;
+  }
+  main .product-card h2 {
+    font-size: 0.7rem;
+  }
+  main .product-card p {
+    font-size: 0.7rem;
+  }
+  main .product-card img {
+    position: relative;
+    left: 5px;
+    top: 10px;
+  }
+  main .product-card .price {
+    font-size: 0.7rem;
+  }
+  main .product-card .basketButton {
+    padding: 0;
+  }
+  main .product-card .basketButton img {
+    width: 80%;
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100vw;
+  }
+  main .cardsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .cardsContainer .product-card:nth-child(4):nth-child(3) {
+    display: none;
+  }
+  main .product-card {
+    width: calc(40% - 2vw); /* 2 карточки в ряд */
+    height: auto; /* автоматически регулируем высоту */
+    margin: 1vw;
+    padding: 2vw;
+  }
+  main .product-card h2 {
+    display: none;
+  }
+  main .product-card p {
+    display: none;
+  }
+  main .product-card img {
+    position: relative;
+    left: 5px;
+    top: 10px;
+  }
+  main .product-card .price {
+    font-size: 0.7rem;
+  }
+  main .product-card .basketButton {
+    padding: 0;
+  }
+  main .product-card .basketButton img {
+    width: 80%;
+    left: 0;
+  }
+  main #sec-1 {
+    max-width: 100%;
+    height: 60vh;
+    padding-top: 15vh;
+    z-index: 1;
+    width: 100vw;
+    margin-top: -15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+    background-image: url("../img/hoodi.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: 20vh;
+    background-position-x: 0vw;
+    overflow: hidden;
+  }
+  main #sec-1 .sec-1 {
+    width: 90vw;
+    height: 40vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: start;
+  }
+  main #sec-1 .sec-1 .left-block {
+    margin-top: 16vh;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block img {
+    top: 100vh;
+    position: absolute;
+    width: 90vw;
+    z-index: 0;
+    display: none;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons {
+    margin-top: 5vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C336C;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    font-size: 0.6rem;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button {
+    padding: 12px 45px 12px 45px;
+    color: black;
+    border: none;
+    font-size: 0.6rem;
+    border-radius: 30px;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button:nth-child(1) {
+    background-color: #3C336C;
+    color: #fff;
+  }
+  main #sec-1 .sec-1 .left-block .text-block {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+    gap: 2vh;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block .text-block h1 {
+    font-size: 1.5rem;
+  }
+  main #sec-1 .sec-1 .left-block .text-block p {
+    width: 60vw;
+    font-size: 0.6rem;
+  }
+  main #sec-5 {
+    max-width: 100%;
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Group 1696.svg");
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    background-position-x: center;
+    background-position-y: 18vh;
+    flex-direction: column;
+  }
+  main #sec-5 .sec-5 {
+    width: 90vw;
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text {
+    margin-top: 15vh;
+    width: 90vw;
+    height: 15vh;
+    flex-direction: column;
+    gap: 0.1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text h5 {
+    font-size: 2rem;
+  }
+  main #sec-5 .sec-5 .sec-5-text p {
+    font-size: 1rem;
+  }
+  main #sec-5 .sec-5 form {
+    flex-direction: column;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+  }
+  main #sec-5 .sec-5 form span {
+    width: 80vw;
+    font-size: 0.9rem;
+    color: #222227;
+    text-align: center;
+    font-weight: normal;
+  }
+  main #sec-5 .sec-5 form .form-cont {
+    margin-top: 3vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+  main #sec-5 .sec-5 form .form-cont input {
+    font-size: 0.9rem;
+    background: transparent;
+    border: none;
+    width: 90vw;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  main #sec-5 .sec-5 form .form-cont button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+  main #sec-1-1 {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100vw;
+  }
+  main #sec-1 {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+    z-index: 1;
+    margin-top: -15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+    background-image: url("../img/litle_hoodi.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: 20vh;
+    background-position-x: 0vw;
+    overflow: hidden;
+  }
+  main #sec-1 .sec-1 {
+    width: 90vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+  }
+  main #sec-1 .sec-1 .left-block {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3C336C;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    font-size: 0.8rem;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button {
+    padding: 12px 45px 12px 45px;
+    color: black;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 30px;
+  }
+  main #sec-1 .sec-1 .left-block .left-buttons button:nth-child(1) {
+    background-color: #3C336C;
+    color: #fff;
+  }
+  main #sec-1 .sec-1 .left-block .text-block {
+    margin-top: -16vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 2vh;
+    flex-direction: column;
+  }
+  main #sec-1 .sec-1 .left-block .text-block h1 {
+    font-size: 1.7rem;
+  }
+  main #sec-1 .sec-1 .left-block .text-block p {
+    width: 90vw;
+    font-size: 0.8rem;
+  }
+  main #sec-5 {
+    max-width: 100%;
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/Group 1696.svg");
+    background-repeat: no-repeat;
+    background-size: 120vw;
+    background-position-x: center;
+    background-position-y: 18vh;
+    flex-direction: column;
+  }
+  main #sec-5 .sec-5 {
+    width: 90vw;
+    height: 60vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text {
+    margin-top: -5vh;
+    width: 90vw;
+    height: 20vh;
+    flex-direction: column;
+    gap: 0.1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  main #sec-5 .sec-5 .sec-5-text h5 {
+    font-size: 1.2rem;
+  }
+  main #sec-5 .sec-5 .sec-5-text p {
+    font-size: 0.7rem;
+  }
+  main #sec-5 .sec-5 form {
+    margin-top: -55vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 90vw;
+    height: 40vh;
+  }
+  main #sec-5 .sec-5 form span {
+    width: 80vw;
+    font-size: 0.9rem;
+    color: #222227;
+    text-align: center;
+    font-weight: normal;
+  }
+  main #sec-5 .sec-5 form .form-cont {
+    margin-top: 3vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+  main #sec-5 .sec-5 form .form-cont input {
+    font-size: 0.9rem;
+    background: transparent;
+    border: none;
+    width: 90vw;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  main #sec-5 .sec-5 form .form-cont button {
+    background-color: #1FAB8A;
+    padding: 15px 45px 15px 45px;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+  }
+  footer {
+    margin-top: -40vh;
+  }
+  .product-card {
+    padding: 1vw;
+    width: calc(80% - 1vw); /* 2 карточки в ряд */
+    height: auto; /* автоматически регулируем высоту */
+    margin: 1vw;
+  }
+  .product-card p {
+    font-size: 4vw;
+  }
+  .product-card h2 {
+    font-size: 5vw;
+  }
+}/*# sourceMappingURL=style.css.map */
