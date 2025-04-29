@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="img/logo.svg" alt="logo">
+            <div class="header_input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+            <button>+380 630 130 103</button>
+            <div class="ico">
+                <i class="fa-regular fa-user"></i> <p>RU <span>/ENG</span></p>
+            </div>
+            <i id="burger" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header_bot">
+            <nav>
+                <ul>
+                    <li><a href='../page_4/index.html'>Наборы</a></li>
+                    <li onclick="open_menu()"><a href='../page_3/index.html'>Все товары</a></li>
+                    <li><a href='../page_5/index.html'>Пошив</a></li>
+                    <li><a href='../page_5/index.html'>Производство</a></li>
+                    <li><a href='../AboutUs/index.html'>Информация</a></li>
+                </ul>
+                <span>Шопперы со скидкой - 25%</span>
+            </nav>
+            <div id="button_menu">
+                <ul>
+                    <li><button>Одежда</button></li>
+                    <li><button onclick="open_menu2()">Сумки и аксессуары</button></li>
+                    <li><button>Для офиса</button></li>
+                    <li><button>Посуда</button></li>
+                    <li><button>Отдых</button></li>
+                    <li><button>Вкусности</button></li>
+                    <li><button>Электроника</button></li>
+                </ul>
+            </div>
+            <div id="button_menu2">
+                <ul>
+                    <li><button>-Рюкзак</button></li>
+                    <li><button>-Сумка/Экосумка</button></li>
+                    <li><button>-Бананка</button></li>
+                    <li><button>-Шапка</button></li>
+                    <li><button>-Кепка</button></li>
+                    <li><button>-Маска для сна</button></li>
+                    <li><button>-Защитная маска</button></li>
+                    <li><button>-Значки/Пины</button></li>
+                    <li><button>-Брелки</button></li>
+                    <li><button>-Обложка на паспорт/тревелкейс/кардхолдер</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+    <section id='sec-1'>
+        <div class="sec-1">
+            <div class="left-block">
+                <div class="text-block">
+                    <h1>Нужно создать уникальный продукт для вашей компании?</h1>
+                    <p>Почему? Потому что это ощутимо и это волнует. Это вовлекает, повышает осведомленность и вызывает эмоции.</p>
+                </div> 
+                <div class="left-buttons">
+                    <button>Написать менеджеру</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="whatWeMadeAll">
+        <div class="whatWeMade">
+            <p class="nazv">Мы можем создать</p>
+            <p class="podNazv">Товары, которые наиболее часто заказывают наши клиенты</p>
+            <div class="cardsContainer"> 
+                <ul>
+                    <li><img id="img_1" src="img/card 2.png" alt=""><p>Шапки</p></li>
+                    <li><img id="img_1" src="img/card 2.png" alt=""><p>Худи</p></li>
+                    <li id="img_2"><img src="img/card 2.png" alt=""><p>Свитшоты</p></li>
+                    <li id="img_2"><img src="img/card 2.png" alt=""><p>Футболки</p></li>
+                </ul>
+                <ul class="ul_2">
+                    <li><img id="img_1" src="img/card 2.png" alt=""><p>Шапки</p></li>
+                    <li><img id="img_1" src="img/card 2.png" alt=""><p>Худи</p></li>
+                    <li id="img_2"><img src="img/card 2.png" alt=""><p>Свитшоты</p></li>
+                    <li id="img_2"><img src="img/card 2.png" alt=""><p>Футболки</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="priceAll">
+        <div class="price">
+            <ul>
+                <li><p>Сроки изготовления</p></li>
+                <li><p>Сроки пошива будут зависеть от объема Вашего заказа и сложности моделей. В среднем изготовление корпоративной продукции занимает  10 -18 рабочих дней с момента утверждения всех деталей.  Если же Вам нужно "на вчера" - Вы можете согласовать такие условия со своими личным менеджером.</p></li>
+                    
+            </ul>
+            <ul>
+                <li><p>Стоимость</p></li>
+                <li><p>Стоимость производства брендированной продукции  на заказ  расчитывается 
+                    индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража 
+                   и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом.</p></li>
+            </ul>
+            <ul>
+                <li><p>Брендирование</p></li>
+                <li><p>Стоимость производства брендированной продукции  на заказ  расчитывается 
+                    индивидуально. Цена зависит от сложности работы, брендирования, материалов, тиража 
+                   и срочности. Мы подберем для вас оптимальный вариант в соответствии с вашим бюджетом.</p></li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/app.js"></script>
+    
+    <script>
+        function open_menu() {
+            const button_menu = document.getElementById('button_menu');
+            if (button_menu.style.display === 'none' || button_menu.style.display === '') {
+                button_menu.style.display = 'flex'; 
+            } else {
+                button_menu.style.display = 'none'; 
+            }
+        }
+        function open_menu2() {
+            const button_menu2 = document.getElementById('button_menu2');
+            if (button_menu2.style.display === 'none' || button_menu2.style.display === '') {
+                button_menu2.style.display = 'flex'; 
+            } else {
+                button_menu2.style.display = 'none'; 
+            }
+        }
+    </script>
+</body>
+</html>
