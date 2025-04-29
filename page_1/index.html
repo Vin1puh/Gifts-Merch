@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="burger_pop" id="burger_pop">
+        <div class="ico">
+            <p>RU <span>/ENG</span> <i class="fa-regular fa-user"></i></p> <button onclick="open_burger()" id="x">x</button>
+        </div>
+        <div class="poshiv">
+            <p>Пошив</p>
+            <button>Все товары</button>
+        </div>
+        <button id="number">+380 630 130 103</button>
+    </div>
+    <header>
+        <div class="header">
+            <img href='./page_1/index.html' src="img/logo.svg" alt="logo">
+            <div class="header_input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Поиск">
+            </div>
+            <button>+380 630 130 103</button>
+            <div class="ico">
+                <i class="fa-regular fa-user"></i> <p>RU <span>/ENG</span></p>
+            </div>
+            <i id="burger" onclick="open_burger()" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header_bot">
+            <nav>
+                <ul>
+                    <li><a href='../page_4/index.html'>Наборы</a></li>
+                    <li onclick="open_menu()"><a href='../page_3/index.html'>Все товары</a></li>
+                    <li><a href='../page_5/index.html'>Пошив</a></li>
+                    <li><a href='../page_5/index.html'>Производство</a></li>
+                    <li><a href='../AboutUs/index.html'>Информация</a></li>
+                </ul>
+                <span>Шопперы со скидкой - 25%</span>
+            </nav>
+            <div id="button_menu">
+                <ul>
+                    <li><button>Одежда</button></li>
+                    <li><button onclick="open_menu2()">Сумки и аксессуары</button></li>
+                    <li><button>Для офиса</button></li>
+                    <li><button>Посуда</button></li>
+                    <li><button>Отдых</button></li>
+                    <li><button>Вкусности</button></li>
+                    <li><button>Электроника</button></li>
+                </ul>
+            </div>
+            <div id="button_menu2">
+                <ul>
+                    <li><button>-Рюкзак</button></li>
+                    <li><button>-Сумка/Экосумка</button></li>
+                    <li><button>-Бананка</button></li>
+                    <li><button>-Шапка</button></li>
+                    <li><button>-Кепка</button></li>
+                    <li><button>-Маска для сна</button></li>
+                    <li><button>-Защитная маска</button></li>
+                    <li><button>-Значки/Пины</button></li>
+                    <li><button>-Брелки</button></li>
+                    <li><button>-Обложка на паспорт/тревелкейс/кардхолдер</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id='sec-1'>
+            <div class="sec-1">
+                <div class="left-block">
+                    <div class="text-block">
+                        <h1>Свежее дыхание в корпоративной жизни</h1>
+                        <p>Ми вдосконалили процес замовлення продукції для того, щоб Ви</br>і Ваша компанія сконцентрувались на основних задачах</br>і досягали поставлених цілей.</p>
+                    </div>  
+                    <img src="img/preferences.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="sec-2">
+            <div class="sec-2">
+                <div class="sec-2-head">
+                    <div class="left-head">
+                        <h2>Самое популярное <i class="fa-solid fa-star" style="color: #63E6BE;"></i></h2>
+                        <p>Товары, которые наиболее часто заказывают наши клиенты</p>
+                    </div>
+                    <p id="sec-2-p">Все товары <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="sec-2-cont">
+                    <img src="img/card 1.png" alt="">
+                    <div class="right">
+                        <img src="img/card 2.png" alt="">
+                        <div class="down">
+                            <img src="img/card 3.png" alt="">
+                            <img src="img/card 4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec-3">
+            <div class="sec-3">
+                <div class="text-cont"> 
+                    <h3>Хотите удивить ваших коллег/партнеров необычными подарками?</h3>
+                    <p>Выбирайте готовые подарочные наборы или укажите критерии по которым мы соберем для Вас уникальный бокс.</p>
+                </div>
+                <div class="buttons">
+                    <button>Перейти к наборам</button>
+                    <button>Создать свой</button>
+                </div>
+            </div>
+        </section>
+        <section id="sec-4">
+            <div class="sec-4">
+                <img id='futbolka' src="img/Mask Group.png" alt="">
+                <div class="left">
+                    <h4>Помимо готовой продукции высокого качества, мы можем для Вас произвести одежду, аксессуры, вкусности и другое под заказ.</h4>
+                    <p>Благодаря личному производству мы изготавливаем большие партии в короткие сроки, а так же у Вас всегда есть возможность кастомизировать изделия.</p>
+                    <div class="sec-4-down">
+                        <div class="slider-container_sec4">
+                            <div class="slider_sec4">
+                                <div class="slide_sec4 active"><img src="img/1.png" alt="Изображение 1"></div>
+                                <div class="slide_sec4"><img src="img/2.png" alt="Изображение 2"></div>
+                                <div class="slide_sec4"><img src="img/3.png" alt="Изображение 3"></div>
+                                <div class="slide_sec4"><img src="img/4.png" alt="Изображение 4"></div>
+                                <div class="slide_sec4 active"><img src="img/1.png" alt="Изображение 1"></div>
+                                <div class="slide_sec4"><img src="img/2.png" alt="Изображение 2"></div>
+                                <div class="slide_sec4"><img src="img/3.png" alt="Изображение 3"></div>
+                                <div class="slide_sec4"><img src="img/4.png" alt="Изображение 4"></div>
+                                <div class="slide_sec4 active"><img src="img/1.png" alt="Изображение 1"></div>
+                                <div class="slide_sec4"><img src="img/2.png" alt="Изображение 2"></div>
+                                <div class="slide_sec4"><img src="img/3.png" alt="Изображение 3"></div>
+                                <div class="slide_sec4"><img src="img/4.png" alt="Изображение 4"></div>
+                            </div>
+                        </div>
+                        <div class="buttons_sec4">
+                            <button class="btn prev_sec4" onclick="navigateSlides_sec4(-1)">&#10094;</button>
+                            <button class="btn next_sec4" onclick="navigateSlides_sec4(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='sec-5'>
+            <div class="sec-5">
+                <div class="sec-5-text">
+                    <h5>У вас своя уникальная идея по разработке мерча?</h5>
+                    <p>Изготовим мерч по вашему дизайну. Расскажем лайфхаки и ознакомим с  технологией производства, предоставим образцы матералов. </p>
+                </div>    
+                <form>
+                    <span>Введите свои контактные данные, и наш менеджер свяжется с Вами в течении 1 часа</span>
+                    <div class="form-cont">
+                        <input type="text" placeholder="Ваше Имя">
+                        <input type="text" placeholder="Ваша почта">
+                        <input type="text" placeholder="Ваш номер телефона">
+                        <button>Заказать</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id='sec-6'>
+            <div class="sec-6">
+                <div class="sec-6-head">
+                    <h6>С нами соотрудничают</h6>
+                </div>
+                <div class="slider">
+                    <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="slider-container">
+                        <div class="slide-track">
+                            <div class="slide"><img src="img/Logo_NIKE 1.png" alt="Image 1"></div>
+                            <div class="slide"><img src="img/Coca-Cola_logo 1.png" alt="Image 2"></div>
+                            <div class="slide"><img src="img/Group 6 (1).png" alt="Image 3"></div>
+                            <div class="slide"><img src="img/logo-full-01-1 1.png" alt="Image 4"></div>
+                            <div class="slide"><img src="img/logo-white 1.png" alt="Image 5"></div>
+                            <div class="slide"><img src="img/Logo_NIKE 1.png" alt="Image 1"></div>
+                            <div class="slide"><img src="img/Coca-Cola_logo 1.png" alt="Image 2"></div>
+                            <div class="slide"><img src="img/Group 6 (1).png" alt="Image 3"></div>
+                            <div class="slide"><img src="img/logo-full-01-1 1.png" alt="Image 4"></div>
+                            <div class="slide"><img src="img/logo-white 1.png" alt="Image 5"></div>
+                        </div>
+                    </div>
+                    <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/app.js"></script>
+    <script>
+        function open_menu() {
+            const button_menu = document.getElementById('button_menu');
+            if (button_menu.style.display === 'none' || button_menu.style.display === '') {
+                button_menu.style.display = 'flex'; 
+            } else {
+                button_menu.style.display = 'none'; 
+            }
+        }
+        function open_menu2() {
+            const button_menu2 = document.getElementById('button_menu2');
+            if (button_menu2.style.display === 'none' || button_menu2.style.display === '') {
+                button_menu2.style.display = 'flex'; 
+            } else {
+                button_menu2.style.display = 'none'; 
+            }
+        }
+
+        function open_burger() {
+            const burger_pop = document.getElementById('burger_pop');
+            if (burger_pop.style.display === 'none' || burger_pop.style.display === '') {
+                burger_pop.style.display = 'flex'; 
+            } else {
+                burger_pop.style.display = 'none'; 
+            }
+        }
+    </script>
+</body>
+</html>
